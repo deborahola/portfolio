@@ -1,0 +1,557 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,400;9..40,500;9..40,700&display=swap');
+
+
+/************** Body **************/
+
+body {
+    overflow: auto;
+    width: 100%;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "DM Sans", sans-serif !important; /* "important": overrides Bootstrap's font */
+    font-size: 0.95em;
+    color: black;
+}
+
+
+
+/************** Navigation Bar **************/
+
+/** FULL/BIGGER SCREEN  **/
+
+.fullscreen-nav {
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 72px;
+    position: fixed;
+    overflow-x: auto;
+    overflow-y: hidden;
+    z-index: 1;
+    background-color: white;
+    opacity: 0.95;
+}
+  
+/* section for logo and menu/list of links */
+.navigation-bar {
+    width: 80%;
+    height: calc(100% - 1px);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(195,67,170);
+}
+  
+.logo {
+    margin-top: 4px;
+    height: 60px;
+    transition: .2s ease;
+}
+  
+/* Menu */
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    line-height: 10px;
+    list-style-type: none;
+    margin: -6px 0 -6px -36px;
+}
+
+/* Menu Links */
+nav li {
+    margin: 6px 0 6px 36px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+  
+nav li a {
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+    transition: .2s ease;
+}
+
+nav li a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 12px;
+    text-decoration-color: grey;
+    transition: .2s ease;
+}
+
+/** HAMBURGER MENU (smaller screens) **/
+
+.logopic {
+    width: 80%;
+    height: calc(100% - 1px);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: none;
+}
+  
+.logo {
+    margin-top: 4px;
+    height: 60px;
+    transition: .2s ease;
+}
+
+.hamburger-nav {
+    display: none; /* Hide on bigger screens */
+    width: 80%;
+    height: calc(100% - 1px);
+    margin: 6px 30px 6px 30px;
+    align-items: center;
+}
+  
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+}
+  
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+  
+.hamburger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: .5s ease;
+}
+  
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+    margin: 6px 0 6px 36px;
+    font-family: "DM Sans", sans-serif;
+}
+  
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+    transition: .2s ease;
+}
+
+.menu-links a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 12px;
+    text-decoration-color: grey;
+    transition: .2s ease;
+}
+  
+.menu-links li {
+    list-style: none;
+}
+  
+.menu-links.open {
+    max-height: 300px;
+}
+  
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+  
+.hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+  
+.hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+  
+.hamburger-icon span:first-child {
+    transform: none;
+}
+  
+.hamburger-icon span:first-child {
+    opacity: 1;
+}
+  
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+
+
+/************** Intro Profile **************/
+
+.beginning-profile {
+    gap: 5rem;
+    width: 80%;
+    padding-top: 15vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.section-pic-container {
+    height: 330px;
+    width: 330px;
+    display: flex;
+}
+  
+.intro-text {
+    align-self: center;
+    text-align: center;
+}
+  
+.intro-text p {
+    font-weight: 600;
+    font-size: 3em;
+}
+
+/* "Deborah" in the intro text */
+.intro-text p b {
+    display: inline-block;
+    color: rgb(195,67,170);
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .05em;
+    vertical-align: middle;
+    animation:
+       typing 2s steps(40, end),
+       blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 3.5em }
+}
+  
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
+  
+/* Social Link Icons */
+
+#socials-container {
+    display: flex;
+    justify-content: center; /* Puts social icons in the center of the screen (under words) */
+    align-items: center; /* fixes issue with the email icon not being aligned well with the others*/
+}
+
+#socials-container a {
+    text-decoration: none; /* Remove underlines from links */
+}
+
+.icon {
+    cursor: pointer;
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 0 10px; /* Spacing between the icons */  
+}
+
+.icon-email {
+    cursor: pointer;
+    margin: 0 7px;
+    width: 4.2rem;
+    height: 4.2rem;
+}
+
+/* Arrow between sections */
+.down-arrow-bounce {
+    display: flex;
+    justify-content: center;
+    font-size: 5em;
+    font-family: Arial;
+    color: rgb(195,67,170);
+    animation: bounce 1.3s infinite;
+}
+  
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-.3rem);
+    }
+    60% {
+      transform: translateY(-.3rem);
+    }
+}
+
+
+/************** Projects **************/
+
+.title {
+    font-size: 2.5rem;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+h2 {
+    font-size: 1.5em !important;
+    font-weight: bold !important;
+}
+
+.card-img-top {
+    object-fit: cover !important;
+    /* fill - stretch the image
+    * contain - preserve the aspect ratio of the image
+    * cover - fill the height and width of the box
+    * none - keep the original size
+    * scale-down - compare the differences between none and contain to
+                   find the smallest object size
+    */
+}
+
+#projects {
+    width: 80%;
+    margin: auto;
+}
+
+.project-type {
+    margin-left: 15px;
+}
+
+
+/************** Experience **************/
+
+.title {
+    font-size: 2.5rem;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#experience {
+    width: 80%;
+    margin: auto;
+}
+
+.experiences {
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: -18px; */
+    margin: 0 auto;
+}
+
+.Experience {
+    margin: 18px;
+    width: calc(50% - 36px);
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    grid-column-gap: 18px;
+    align-items: center;
+}
+
+.Experience img {
+    width: 105%;
+    border: 1px solid black;
+    border-radius: 6px;
+    background-color: #F2F2F2;
+}
+
+.Experience .text {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    list-style-type: none;
+}
+
+.Experience .text > * {
+    margin: 0;
+    line-height: 170%;
+}
+
+/* screens smaller than 768px (typical mobile phone size) */
+@media only screen and (max-width: 767px) {
+    /* make experiences go horizontally */
+    .experiences {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .Experience {
+        width: 100%;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+}
+
+/* Center button horizontally */
+/* .button.active-button { margin: 0 auto; } */
+
+.button {
+    margin-top: 30px;
+    display: block;
+    width: fit-content;
+    border: 1px solid;
+    border-radius: 10000rem;
+    font-weight: auto;
+    font-size: 1em;
+    text-decoration: none;
+    text-align: center;
+    line-height: 100%;
+    padding: 15px 18px;
+    transition: 0.15s ease-in-out;
+}
+  
+.active-button {
+    border-color: black;
+    color: black;
+    background-color: #FFD874; /*old: #F35C2C*/
+    cursor: pointer;
+    margin: none;
+}
+
+.active-button:hover {
+    background-color: #ffbb0e;
+}
+
+
+/************** Skills **************/
+
+.title {
+    font-size: 2.5rem;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#skills {
+    width: 80%;
+    margin: auto;
+}
+
+.Skills {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    /* justify-content: center; */
+}
+
+
+.skills-data {
+    width: max-content;
+    padding: 8px 16px; 
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    margin: 6px;
+    margin-bottom: 50px;
+}
+
+.skill-icon {
+    font-size: 80px;
+}
+
+.skill-name {
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 720px) {
+    .skills-data {
+        width: max-content;
+        height: 100px;
+    }
+    .skill-icon {
+        font-size: 60px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .skills-data {
+        justify-content: center;
+    }
+    .Skills {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/************** Contact (Footer) **************/
+
+#footer {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    border-top: 1px solid rgb(195,67,170);
+}
+
+h6 {
+    font-size: 1.5em !important;
+    font-weight: bold !important;
+}
+
+#footer .footer-title {
+    margin-top: 50px;
+}
+  
+#footer .contact-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 3.25fr;
+    column-gap: 12px;
+    line-height: 170%;
+}
+
+#footer .contact-wrapper > p {
+    margin-top: 15px;
+    margin-bottom: 60px;
+    width: 100%;
+}
+
+#footer .contact-wrapper .links {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: right;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    /*margin-left: -12px;*/
+}
+
+#footer .contact-wrapper .links > * {
+    margin: 0 12px 12px 12px;
+    color: black;
+    text-underline-offset: 7px;
+}
+
+@media only screen and (max-width: 600px) {
+    #footer .contact-wrapper {
+        grid-template-columns: 1fr;
+    }
+    #footer .contact-wrapper .links {
+        margin-top: 18px;
+        text-align: left;
+        justify-content: flex-start;
+    }
+}
+
+
+
+

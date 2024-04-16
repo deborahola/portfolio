@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deborah Oladokun | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="icon" type="image/svg" href="assets/logo3.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
+</head>
+
+<body>
+
+    <!-- Top Navigation Bar: Full-Size & Hamburger (Small) -->
+
+    <div class="fullscreen-nav">
+        <div class="navigation-bar">
+            <a href="index.html">
+                <img class="logo" src="assets/logo2.png" alt="Deborah Oladokun Logo" title="Home">
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a class="resume-btn" onclick="window.open('assets/Resume Deborah Oladokun.pdf')">Resume</a></li>
+                    <li><a href="#footer">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="hamburger-nav">
+        <div class="logopic">
+            <a href="index.html">
+                <img class="logo" src="assets/logo2.png" alt="Deborah Oladokun Butterfly Logo" title="Home">
+            </a>
+        </div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+            <li><a class="resume-btn" onclick="window.open('assets/tryresume.pdf')">Resume</a></li>
+            <li><a href="#footer" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+    </div>
+
+    
+    <!-- Introduction -->
+
+    <div class="beginning-profile">
+        <div class="intro-text">
+            <p>Hi! I'm <b>Deborah</b>, a computer science student at Georgia Tech.</p>
+            <div id="socials-container">
+                <a href="https://github.com/deborahola" target="_blank">
+                    <img class="icon" src="./assets/github.png" alt="Github" title="My Github Profile">
+                </a>
+                <a href="https://linkedin.com/in/deborah-oladokun" target="_blank">
+                    <img class="icon" src="./assets/linkedin.png" alt="LinkedIn" title="My LinkedIn Profile">
+                </a>
+                <a href="mailto: deboraholadokun2003@gmail.com" target="_blank">
+                    <img class="icon-email" src="./assets/email.png" alt="Email" title="My Email">
+                </a>
+            </div>
+        </div>
+        <div class="section-pic-container">
+            <img src="./assets/profile-pic-sparkle.png" alt="sparkle picture"/>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="down-arrow-bounce">↓</div>
+
+    <br><br><br>
+
+
+    <!-- Projects -->
+    
+    <section id="projects">
+        <h1 class="title">Projects</h1>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="card-img-top" src="./assets/collegescheduler.png" width="100%" height="225">
+              <div class="card-body">
+                <h2>College Scheduler</h2>
+                <p class="card-text">An Android app that helps college students stay organized by allowing them to track their classes, assignments, exams, and more.</p>
+                <medium class="text-body-secondary">Java, XML, SQLite, Android Studio</medium>
+                <p class="card-text"> </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="https://appetize.io/app/xmf56i7myll72arbu2d6fqrw7y?device=pixel7&osVersion=13.0" class="btn btn-sm btn-outline-secondary" target="_blank">Live Demo</a>
+                    <a href="https://github.com/deborahola/College-Scheduler-App" class="btn btn-sm btn-outline-secondary" target="_blank">Github</a>
+                  </div>
+                  <div class="project-type">
+                    <small class="text-body-secondary">Personal Project</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="card-img-top" src="./assets/newscorner.png" width="100%" height="225">
+              <div class="card-body">
+                <h2>News Corner</h2>
+                <p class="card-text">A full-stack application that provides easy access to the latest news across many different categories.</p>
+                <medium class="text-body-secondary">HTML, CSS, Python, Flask, News API</medium>
+                <p class="card-text"> </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <!-- https://news-corner.deboraholadoku1.repl.co/ -->
+                    <a href="http://debbieola.pythonanywhere.com/" class="btn btn-sm btn-outline-secondary" target="_blank">Live Demo</a>
+                    <a href="https://github.com/deborahola/News-Corner" class="btn btn-sm btn-outline-secondary" target="_blank">Github</a>
+                  </div>
+                  <div class="project-type">
+                    <small class="text-body-secondary">Personal Project</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="card-img-top" src="./assets/ida.png" width="100%" height="225">
+              <div class="card-body">
+                <h2>AwareHealth Hub</h2>
+                <p class="card-text">An informative web app raising awareness about diseases and their prevention, while providing reliable health information.</p>
+                <medium class="text-body-secondary">HTML, CSS, JavaScript, Bootstrap</medium>
+                <p class="card-text"> </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <!-- https://infectious-diseases-awareness.deboraholadoku1.repl.co/ -->
+                    <a href="https://deborahola.github.io/Infectious-Diseases-Awareness-Website/" class="btn btn-sm btn-outline-secondary" target="_blank">Live Demo</a>
+                    <a href="https://github.com/deborahola/Infectious-Diseases-Awareness-Website" class="btn btn-sm btn-outline-secondary" target="_blank">Github</a>
+                  </div>
+                  <div class="project-type">
+                    <small class="text-body-secondary">Team Project</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="card-img-top" src="./assets/travel.png" width="100%" height="225">
+              <div class="card-body">
+                <h2>TravelHaven</h2>
+                <p class="card-text">A React-based travel application that recommends tourists attractions in Maryland based on parameters such as rating & price.</p>
+                <medium class="text-body-secondary">React, JavaScript, CSS</medium>
+                <p class="card-text"> </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="https://ssaniya-dev.github.io/fbla-travelapp/" class="btn btn-sm btn-outline-secondary" target="_blank">Live Demo</a>
+                  </div>
+                  <div class="project-type">
+                    <small class="text-body-secondary">Team Project</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="card-img-top" src="./assets/devport1.png" width="100%" height="225">
+              <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" 
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" 
+                height="100%" fill="#55595c"></rect>
+              </svg> -->
+              <div class="card-body">
+                <h2>Developer Portfolio</h2>
+                <p class="card-text">A responsive, user-friendly website displaying resumé information for Deborah.</p>
+                <medium class="text-body-secondary">HTML, CSS, JavaScript, Bootstrap</medium>
+                <p class="card-text"> </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="https://github.com/deborahola/portfolio" class="btn btn-sm btn-outline-secondary" target="_blank">Github</a>
+                  </div>
+                  <div class="project-type">
+                    <small class="text-body-secondary">This site!</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+    </section>
+
+
+    <br><br>
+    <div class="down-arrow-bounce">↓</div>
+    <br><br>
+
+
+    <!-- Experience -->
+    
+    <section id="experience">
+      <h1 class="title">Experience</h1>
+			<div class="experiences">
+
+        <div class="Experience">
+					<img src="./assets/cocGT.jpeg" alt="GT Logo">
+					<div class="text">
+						<h4>Teaching Assistant</h4>
+						<p>GT College of Computing • 2024 – Present</p>
+					</div>
+				</div>
+
+        <div class="Experience">
+					<img src="./assets/GTwebdevlogo.png" alt="GT WebDev">
+					<div class="text">
+						<h4>Web Developer</h4>
+						<p>GT WebDev • 2022 – Present </p>
+					</div>
+				</div>
+
+				<div class="Experience">
+					<img src="./assets/ftflogo.png" alt="FinTech Focus Logo">
+					<div class="text">
+						<h4>FinTech Focus Fellow</h4>
+						<p>Giant Machines • 2022</p>
+					</div>
+				</div>
+
+				<div class="Experience">
+					<img src="./assets/kwk2logo.png" alt="KWK Logo">
+					<div class="text">
+						<h4>Mobile App Dev Scholar</h4>
+						<p>Kode With Klossy • 2022</p>
+					</div>
+				</div>
+
+				<div class="Experience">
+					<img src="./assets/opensesamelogo.png" alt="OpenSesame Logo">
+					<div class="text">
+						<h4>Step Into Tech Intern</h4>
+						<p>OpenSesame • 2021 – 2022</p>
+					</div>
+				</div>
+
+        <div class="Experience">
+					<img src="./assets/Girls-Who-Code logo.jpeg" alt="GWC Logo">
+					<div class="text">
+						<h4>Immersion Program Scholar</h4>
+						<p>Girls Who Code • 2021</p>
+					</div>
+				</div>
+
+				<br><br>
+				<a class="button active-button" onclick="window.open('assets/Resume Deborah Oladokun.pdf')">View Full Resume</a>
+			</div>
+    </section>
+
+    <br>
+    <div class="down-arrow-bounce">↓</div>
+    <br><br><br>
+
+
+    <!-- Skills -->
+    
+    <section id="skills">
+      <h1 class="title">Skills</h1>
+			<div class="Skills" id="skills-container">
+        <!-- Skills will be dynamically generated here -->
+      </div>
+    </section>
+
+
+    <br><br><br>
+
+
+    <!-- Contact -->
+
+    <div id="footer">
+      <div class="footer-title">
+        <h6>Thanks for visiting. &nbsp; &nbsp; •◡•</h6>
+      </div>
+      <div class="contact-wrapper">
+        <p>Let's get in touch! Feel free to contact me.</p>
+        <div class="links">
+          <a href="https://github.com/deborahola" target="_blank">Github ↗</a>
+          <a href="https://linkedin.com/in/deborah-oladokun" target="_blank">LinkedIn ↗</a>
+          <a href="mailto: deboraholadokun2003@gmail.com" target="_blank">Email ↗</a>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

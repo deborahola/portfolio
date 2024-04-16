@@ -1,0 +1,151 @@
+
+@media only screen and (max-width: 1800px) {
+    #projects {
+        scroll-margin-top: 6.5em; /* ensure that the scrolling lands exactly on the word "Projects" and not slightly after it */
+    }
+
+    #experience {
+        scroll-margin-top: 7em;
+    }
+
+    #skills {
+        scroll-margin-top: 18em;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .intro-text p {
+        padding-top: 50px;
+    }
+
+    #projects {
+        scroll-margin-top: 6em;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .logo {
+        margin-top: 4px;
+        height: 50px;
+    }
+
+    .intro-text p {
+        font-size: 2.5em;
+        padding-top: 50px;
+    }
+
+    .section-pic-container {
+        height: 300px;
+        width: 300px;
+    }
+
+    #projects { /* 5.5 */
+        scroll-margin-top: 5.5em;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .logo {
+        margin-top: 4px;
+        height: 50px;
+    }
+
+    .intro-text p {
+        font-size: 2.2em;
+        padding-top: 50px;
+    }
+
+    .section-pic-container {
+        height: 240px;
+        width: 240px;
+    }
+
+    #projects {
+        scroll-margin-top: 6em;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+    nav li {
+        margin: 6px 0 6px 18px;
+        font-size: 0.9em;
+    }
+
+    .logo {
+        margin-top: 4px;
+        height: 40px;
+    }
+
+    .intro-text p {
+        font-size: 2em;
+    }
+
+    .section-pic-container {
+        display: flex;
+        height: 200px;
+        width: 200px;
+    }
+
+    #projects {
+        scroll-margin-top: 6em;
+    }
+}
+
+
+@media screen and (max-width: 580px) {
+    .fullscreen-nav {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+        justify-content: end;
+    }
+
+    .hamburger-nav {
+        display: flex;
+    }
+
+    .logo {
+        margin-top: 4px;
+        height: 60px;
+    }
+
+    .section-pic-container {
+        display: none;
+    }
+
+    .beginning-profile {
+        padding-top: 3vh;
+    }
+
+    #projects {
+        scroll-margin-top: 2em;
+    }
+
+    #experience {
+        scroll-margin-top: 2em;
+    }
+
+    #skills {
+        scroll-margin-top: 2em;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .logopic {
+        width: 100%;
+    }
+
+    .section-pic-container {
+        display: none;
+    }
+
+    .beginning-profile {
+        padding-top: 3vh;
+    }
+
+    #projects {
+        scroll-margin-top: 2em;
+    }
+}
