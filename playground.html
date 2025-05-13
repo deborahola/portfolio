@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Playground | Deborah Oladokun</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width initial-scale=1">  
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,450;0,500;0,600;0,700;1,400;1,450;1,500;1,600;1,700&family=Mulish:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles_modal.css">
+  <link rel="stylesheet" href="styles_main.css">
+  <link rel="stylesheet" href="styles_playground.css">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <script src="modal.js"></script>
+  <script src="script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="top-nav">
+
+    <div class="navigation-bar">
+  
+      <a href="index.html">
+        <img class="logo"
+             src="assets/logo.svg"
+             alt="Deborah Oladokun Logo"
+       title="Home">
+      </a>
+      
+      <nav>
+          <ul class="nav-links">
+            <li class="inactive"><a href="index.html#experiences"><img class="h1-icon" src="assets/draw-graphic.svg">  Experience</a></li>
+            <li class="selected"><a href="playground.html"><img class="h1-icon" src="assets/program-graphic.svg">  Projects</a></li>
+            <li class="inactive"><a class="resume-link" onclick="window.open('assets/Oladokun_Deborah_Resume.pdf')"><img class="h1-icon"src="assets/build-graphic.svg">  Resume</a></li>
+          </ul>
+      </nav>
+  
+    </div>
+  
+  </div>
+
+
+
+
+
+<div id="playground">
+
+<div class="content">
+    <h1><span class="h1-description">Some things I've <img class="h1-icon-play" src="assets/program-graphic.svg"> developed.</span>
+    </h1>
+    
+    <div class="s-m-space"></div>
+
+    <div class="anchor" id="gallery-anchor"></div>
+    <div class="gallery"
+        data-aos="fade-up" 
+        data-aos-anchor="#gallery-anchor"
+        data-aos-offset="250">
+      <div class="grid-item" onclick="openModal();currentSlide(1)">
+        <img src="assets/travel.png" alt="TravelATL" onclick="openModal();currentSlide(1)">
+        <p><i>TravelATL</i>, a React web application that recommends tourists attractions and restaurants in Atlanta, GA based on parameters like rating & price</p>
+      </div>
+      <div class="grid-item" onclick="openModal();currentSlide(2)">
+        <img src="assets/coin.gif" alt="Coin game" onclick="openModal();currentSlide(2)">
+        <p><i>Collect The Coin</i>, an original game for the GameBoy Advance (GBA)</p>
+      </div>
+      <div class="grid-item" onclick="openModal();currentSlide(3)">
+        <img src="assets/newscorner.png" alt="News Corner" onclick="openModal();currentSlide(3)">
+        <p><i>News Corner</i>, a full-stack application that provides easy access to the latest news across many different categories</p>
+      </div>
+      <div class="grid-item" onclick="openModal();currentSlide(4)">
+        <img src="assets/rhythm.png" alt="Rhythm" onclick="openModal();currentSlide(4)">
+        <p><i>Rhythm Report</i>, a year-round music insights app inspired by Spotify Wrapped that allows users to analyze their listening habits and music tastes</p>
+      </div>
+      <div class="grid-item" onclick="openModal();currentSlide(5)">
+        <img src="assets/collegescheduler.png" alt="College Scheduler" onclick="openModal();currentSlide(5)">
+        <p><i>College Scheduler</i>, an Android app that helps college students stay organized by allowing them to manage their classes, assignments, exams, and more</p>
+      </div>
+      <div class="grid-item" onclick="openModal();currentSlide(6)">
+        <img src="assets/portfolio.png" alt="Portfolio" onclick="openModal();currentSlide(6)" style="border: 1px solid black; border-radius: 6px;">
+        <p><i>This portfolio!</i> - a responsive, user-friendly website showcasing Debbie's work, skills, and experiences</p>
+      </div>
+
+    </div>
+</div>
+
+
+<div class="m-space"></div>
+  
+
+<div class="footer">
+  <hr>
+  <div class="s-space"></div>
+  <h3>Thanks for stopping by.       •◡•</h3>
+  <div class="contact-wrapper">
+    <p>Let's get in touch!</p>
+    <div class="links">
+      <div class="socials-container">
+        <a href="https://github.com/deborahola" target="_blank" rel="noopener noreferrer" aria-label="Visit my GitHub profile" class="social-link">
+          <img src="assets/github.svg" alt="GitHub logo" class="social-icon" />
+          GitHub
+        </a>
+        <a href="https://linkedin.com/in/deborah-oladokun" target="_blank" rel="noopener noreferrer" aria-label="Visit my LinkedIn profile" class="social-link">
+          <img src="assets/linkedin.png" alt="LinkedIn logo" class="social-icon" />
+          LinkedIn
+        </a>
+        <a href="mailto:deboraholadokun2003@gmail.com" target="_blank" aria-label="Send me an email" class="social-link">
+          <img src="assets/email.svg" alt="Email icon" class="social-icon" />
+          Email
+        </a>
+      </div>
+      <!-- <a href="mailto: deboraholadokun2003@gmail.com" target="_blank">deboraholadokun2003@gmail.com</a> -->
+      <!-- <span>404-482-6554</span> -->
+    </div>
+  </div>
+  <div class="s-space"></div>
+</div>
+
+
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+      <div class="mySlides">
+        <div class="image-container">
+          <img src="assets/travel.png" alt="TravelATL">
+        </div>
+        <div class="caption-container">
+          <p class="description-title">TravelATL</p>
+          <p style="margin-bottom:0;">ReactJS, JavaScript, CSS, REST API</p>
+          <p style="margin-top:0;"><a href="https://deborahola.github.io/travel-app/" target="_blank">Live Demo</a></p>
+        </div>
+      </div>
+
+      <div class="mySlides">
+        <div class="image-container">
+          <img src="assets/coin.gif" alt="Coin game">
+        </div>
+        <div class="caption-container">
+          <p class="description-title">Collect The Coin</p>
+          <p style="margin-bottom:0;">An original game made for the GameBoy Advance using C</p>
+          <!-- <p style="margin-top:0;"><a href="gba2.html">Read more about this game + other popular games I recreated</a></p> -->
+        </div>
+      </div>
+
+      <div class="mySlides">
+        <div class="image-container">
+          <img src="assets/newscorner.png" alt="News Corner">
+        </div>
+        <div class="caption-container">
+          <p class="description-title">News Corner</p>
+          <p style="margin-bottom:0;">HTML, CSS, Python, Flask, News API, Bootstrap</p>
+          <p style="margin-top:0;"><a href="http://debbieola.pythonanywhere.com/" target="_blank">Live Demo</a></p>
+        </div>
+      </div>
+
+      <div class="mySlides">
+        <div class="image-container">
+          <img src="assets/rhythm.png" alt="Rhythm">
+        </div>
+        <div class="caption-container">
+          <p class="description-title">Rhythm Report</p>
+          <p style="margin-bottom:0;">Java, Spotify API, Android Studio, Firebase</p>
+          <p style="margin-top:0;"><a href="https://github.com/deborahola/RhythmReport" target="_blank">Github</a></p>
+        </div>
+      </div>
+
+      <div class="mySlides">
+        <div class="image-container">
+          <img src="assets/collegescheduler.png" alt="College Scheduler">
+        </div>
+        <div class="caption-container">
+          <p class="description-title">College Scheduler</p>
+          <p style="margin-bottom:0;">Java, XML, SQLite, Google Firebase, Android Studio</p>
+          <p style="margin-top:0;"><a href="https://appetize.io/app/xmf56i7myll72arbu2d6fqrw7y?device=pixel7&osVersion=13.0" target="_blank">Live Demo</a></p>
+        </div>
+      </div>
+
+      <div class="mySlides">
+        <div class="image-container">
+          <img src="assets/portfolio.png" alt="Portfolio">
+        </div>
+        <div class="caption-container">
+          <p class="description-title">This portfolio site!</p>
+          <p style="margin-bottom:0;">HTML, CSS, JavaScript</p>
+        </div>
+      </div>
+
+
+
+
+
+      <!-- Next/previous controls with buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <!-- Next/previous controls with arrow keys -->
+      <script>
+        document.onkeydown = function(e) {
+          if (modalOpen === true) {
+            switch (e.keyCode) {
+              case 37: // left arrow
+                plusSlides(-1);
+                break;
+              case 39: // right arrow
+                plusSlides(1);
+                break;
+            }
+          }
+        }
+      </script>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+<br>
+
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+
+</div>
+
+</body>
+</html>

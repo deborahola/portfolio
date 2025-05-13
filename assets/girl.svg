@@ -1,0 +1,99 @@
+<svg width="230" height="270" viewBox="0 0 230 270" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_3214_24333)">
+<rect x="42.5" y="102.5" width="147" height="121" fill="#1A1A1A" stroke="#1A1A1A"/>
+<path d="M42.5017 257.5C42.7706 217.137 75.5739 184.5 116 184.5C156.426 184.5 189.229 217.137 189.498 257.5H42.5017Z" fill="#FFD874" stroke="#1A1A1A"/>
+
+<!-- Rotating head -->
+<g>
+<path d="M111.94 32.0166L92.0291 42.0754C89.036 43.5875 85.5 41.4122 85.5 38.0588L85.5 17.9412C85.5 14.5878 89.036 12.4126 92.0291 13.9246L111.94 23.9834C115.235 25.6478 115.235 30.3522 111.94 32.0166Z" fill="#FFD874" stroke="#1A1A1A"/>
+<path d="M120.06 23.9834L139.971 13.9246C142.964 12.4126 146.5 14.5878 146.5 17.9412L146.5 38.0588C146.5 41.4122 142.964 43.5874 139.971 42.0754L120.06 32.0166C116.765 30.3522 116.765 25.6478 120.06 23.9834Z" fill="#FFD874" stroke="#1A1A1A"/>
+<rect x="110.5" y="21.5" width="11" height="13" rx="4.5" fill="#FFD874" stroke="#1A1A1A"/>
+<circle cx="182.5" cy="123.5" r="13" fill="#FFD874" stroke="#1A1A1A"/>
+<circle cx="49.5" cy="123.5" r="13" fill="#FFD874" stroke="#1A1A1A"/>
+<circle cx="116" cy="102" r="73.5" fill="#FFD874" stroke="#1A1A1A"/>
+<rect x="103" y="119" width="3" height="3" rx="1" fill="#1A1A1A">
+    <animate id="x1" attributeName="x" values="103;101;103" keyTimes="0;0.5;1" dur="400ms" begin="1s;x1.end+1.275s" fill="freeze"/>
+    <animate id="y1" attributeName="y" values="119;121;119" keyTimes="0;0.5;1" dur="400ms" begin="1s;y1.end+1.275s" fill="freeze"/>
+    <animate id="width1" attributeName="width" values="3;7;3" keyTimes="0;0.5;1" dur="400ms" begin="1s;width1.end+1.275s" fill="freeze"/>
+    <animate id="height1" attributeName="height" values="3;1;3" keyTimes="0;0.5;1" dur="400ms" begin="1s;height1.end+1.275s" fill="freeze"/>
+</rect>
+<rect x="126" y="119" width="3" height="3" rx="1" fill="#1A1A1A">
+    <animate id="x2" attributeName="x" values="126;124;126" keyTimes="0;0.5;1" dur="400ms" begin="1s;x2.end+1.275s" fill="freeze"/>
+    <animate id="y2" attributeName="y" values="119;121;119" keyTimes="0;0.5;1" dur="400ms" begin="1s;y2.end+1.275s" fill="freeze"/>
+    <animate id="width2" attributeName="width" values="3;7;3" keyTimes="0;0.5;1" dur="400ms" begin="1s;width2.end+1.275s" fill="freeze"/>
+    <animate id="height2" attributeName="height" values="3;1;3" keyTimes="0;0.5;1" dur="400ms" begin="1s;height2.end+1.275s" fill="freeze"/>
+</rect>
+<path d="M104 127.5C104 127.5 106.5 134 116 134C125.5 134 128 127.5 128 127.5" stroke="#1A1A1A" stroke-linecap="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M116 59.0001C116 86.6143 93.6142 109 66 109C57.3047 109 49.1279 106.78 42.0051 102.877C42.0017 102.585 42 102.293 42 102C42 64.5996 69.7458 33.6795 105.777 28.7004C112.191 37.1078 116 47.6091 116 59.0001ZM126.223 28.7004C119.809 37.1078 116 47.6091 116 59.0001C116 86.6143 138.386 109 166 109C174.695 109 182.872 106.78 189.995 102.877C189.998 102.585 190 102.293 190 102C190 64.5996 162.254 33.6795 126.223 28.7004Z" fill="#1A1A1A"/>
+<rect x="105" y="29" width="22" height="30" fill="#1A1A1A"/>
+<rect x="36.5" y="12.5" width="159" height="163" stroke="#2496FF"/>
+<rect x="34.5" y="10.5" width="4" height="4" fill="white" stroke="#2496FF"/>
+<rect x="34.5" y="173.5" width="4" height="4" fill="white" stroke="#2496FF"/>
+<rect x="193.5" y="10.5" width="4" height="4" fill="white" stroke="#2496FF"/>
+<rect x="193.5" y="173.5" width="4" height="4" fill="white" stroke="#2496FF"/>
+<animateTransform id="anim1" attributeName="transform" type="rotate"
+                values="0 123 99; 0 123 99; 7 123 99; 7 123 99; 0 123 99; 0 123 99"
+                keyTimes="0;0.1;0.3;0.7;0.9;1"
+                keySplines="0.25 0.1 0.25 1; 0.25 0.1 0.25 1; 0.25 0.1 0.25 1; 0.25 0.1 0.25 1; 0.25 0.1 0.25 1; 0.25 0.1 0.25 1"
+                dur="1350ms" begin="1s;anim1.end+2s" fill="freeze"/>
+</g>
+
+<path d="M229.5 243.516C229.5 251.242 223.024 257.532 215 257.532C206.976 257.532 200.5 251.242 200.5 243.516C200.5 235.791 206.976 229.5 215 229.5C223.024 229.5 229.5 235.791 229.5 243.516Z" fill="#FFD874" stroke="#1A1A1A"/>
+
+<!-- Moving hand -->
+<g>
+<circle cx="17" cy="243" r="14.5" fill="#FFD874" stroke="#1A1A1A"/>
+<rect x="2.5" y="228.5" width="29" height="29" stroke="#2496FF"/>
+<rect x="0.5" y="226.5" width="4" height="4" fill="white" stroke="#2496FF"/>
+<rect x="0.5" y="255.5" width="4" height="4" fill="white" stroke="#2496FF"/>
+<rect x="29.5" y="226.5" width="4" height="4" fill="white" stroke="#2496FF"/>
+<rect x="29.5" y="255.5" width="4" height="4" fill="white" stroke="#2496FF"/>
+<g filter="url(#filter0_d_3214_24333)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M32 257.883L17 251L20.5477 267.25L24.8828 260.832L32 257.883V257.883Z" fill="white"/>
+<path d="M30.718 257.859L24.6865 260.358L24.5441 260.417L24.4578 260.545L20.7932 265.97L17.7203 251.895L30.718 257.859Z" stroke="white" stroke-width="1.02566" stroke-miterlimit="16"/>
+</g>
+<path d="M28.2704 257.762L24.0004 259.53L23.8724 259.583L23.7949 259.698L21.2023 263.537L19.0141 253.514L28.2704 257.762Z" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="0.921224" stroke-miterlimit="16"/>
+<animateTransform id="anim2" attributeName="transform" type="translate"
+                values="0,0;5,-42;21,-55;5,-42;21,-55;5,-42;21,-55;5,-42;5,-42;0,0"
+                keyTimes="0;0.1;0.2;0.3;0.4;0.5;0.6;0.7;0.9;1"
+                keySplines="0.25 0.1 0.25 1; 0.25 0.1 0.25 1; 0.25 0.1 0.25 1; 0.25 0.1 0.25 1; 0.25 0.1 0.25 1; 0.25 0.1 0.25 1; 0.25 0.1 0.25 1; 0.25 0.1 0.25 1; 0.25 0.1 0.25 1"
+                dur="1350ms" begin="1s;anim2.end+2s" fill="freeze"/>
+                
+</g>
+
+<!-- Moving rotation cursor -->
+<g filter="url(#filter1_d_3214_24333)">
+<path d="M206.571 3V5.14286H211.214C211.214 5.14286 213.975 5.0587 214.956 6.03945C215.936 7.02021 215.857 9.78571 215.857 9.78571V14.4286H218L215.143 18L212.286 14.4286H214.429V10.5C214.429 10.5 214.617 8.11547 213.761 7.25918C212.904 6.40288 210.5 6.57143 210.5 6.57143H206.571V8.71429L203 5.85714L206.571 3Z" fill="#1A1A1A"/>
+<path d="M211.21 4.6428L211.208 4.64286H207.071V3V1.95969L206.259 2.60957L202.688 5.46671L202.2 5.85714L202.688 6.24758L206.259 9.10472L207.071 9.7546V8.71429V7.07143H210.5H210.518L210.535 7.07023L210.535 7.07022L210.535 7.07022L210.535 7.0702L210.535 7.07019L210.539 7.06995L210.556 7.06892C210.572 7.06802 210.595 7.06675 210.627 7.06539C210.689 7.06266 210.781 7.0596 210.894 7.05845C211.121 7.05614 211.431 7.06162 211.764 7.09211C212.098 7.12278 212.443 7.17763 212.745 7.26905C213.054 7.36249 213.276 7.4815 213.407 7.61273C213.538 7.74364 213.656 7.96379 213.747 8.26992C213.837 8.56961 213.889 8.91124 213.918 9.24315C213.946 9.57295 213.949 9.87983 213.945 10.105C213.943 10.2171 213.939 10.3079 213.936 10.3699C213.934 10.4008 213.933 10.4245 213.932 10.44L213.93 10.4568L213.93 10.4604L213.93 10.4606L213.93 10.4608L213.93 10.4609L213.93 10.4609L213.929 10.4803V10.5V13.9286H212.286H211.245L211.895 14.7409L214.752 18.3123L215.143 18.8004L215.533 18.3123L218.39 14.7409L219.04 13.9286H218H216.357V9.79195L216.357 9.78914L216.358 9.76272C216.358 9.74012 216.358 9.7077 216.359 9.66658C216.359 9.58438 216.358 9.46715 216.354 9.3239C216.346 9.0382 216.324 8.64504 216.27 8.21772C216.216 7.79235 216.129 7.32064 215.985 6.88249C215.844 6.45118 215.633 6.01023 215.309 5.6859C214.985 5.3615 214.544 5.15175 214.113 5.01047C213.675 4.86698 213.204 4.78031 212.779 4.72723C212.352 4.6739 211.96 4.65295 211.674 4.64522C211.531 4.64134 211.414 4.64075 211.332 4.64116C211.291 4.64137 211.259 4.64182 211.236 4.64224L211.21 4.6428Z" stroke="white"/>
+<animateTransform id="anim3" attributeName="transform" type="translate"
+                values="-2 0; -2 0; 8, 15; 8, 15; -2 0;-2 0"
+                keyTimes="0;0.1;0.3;0.7;0.9;1"
+                keySplines="0.25 0.1 0.25 1; 0.25 0.1 0.25 1; 0.25 0.1 0.25 1; 0.25 0.1 0.25 1; 0.25 0.1 0.25 1; 0.25 0.1 0.25 1"
+                dur="1350ms" begin="1s;anim3.end+2s" fill="freeze"/>
+</g>
+
+</g>
+<defs>
+<filter id="filter0_d_3214_24333" x="13.923" y="248.949" width="21.154" height="22.404" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="1.02566"/>
+<feGaussianBlur stdDeviation="1.53849"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3214_24333"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3214_24333" result="shape"/>
+</filter>
+<filter id="filter1_d_3214_24333" x="198.398" y="-1.08063" width="24.6797" height="24.6814" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="1"/>
+<feGaussianBlur stdDeviation="1.5"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3214_24333"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3214_24333" result="shape"/>
+</filter>
+<clipPath id="clip0_3214_24333">
+<rect width="230" height="270" fill="white"/>
+</clipPath>
+</defs>
+</svg>

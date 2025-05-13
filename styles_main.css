@@ -1,0 +1,407 @@
+/************************** Common Vars **************************/
+
+
+:root {
+    --mbb-color: #B7B5FA;
+    --moodfood-color: #748BDA;
+    --savvy-color: #2C3237;
+    --canvas-color: #ffe2e2; /*old: #1BBCF9;*/
+    --gba-color: #CCE9A7;
+    --accent-color: #FFD874; /*old: #F35C2C*/
+    --accent-color-darkened: #ffbb0e;
+    --highlight-color: #ffd87462;
+    --primary-text-color: #1a1a1a;
+    --secondary-text-color: #595959;
+    --background-color: #FFFFFF;
+    --darker-background-color: #F2F2F2;
+    --light-stroke-color: #c2c2c2;
+  }
+  
+  :root {
+    --body-font: "Figtree";
+    --title-font: "Figtree";
+  }
+  
+  :root {
+    --heading-1-font-size: 3em;
+    --heading-2-font-size: 2.5em;
+    --heading-3-font-size: 2em;
+    --heading-4-font-size: 1.5em;
+    --heading-5-font-size: 1.2em;
+    --heading-6-font-size: 1em;
+    --heading-bold-font-weight: 650;
+    --heading-semibold-font-weight: 600;
+  }
+  
+  /************************** Animations **************************/
+  @keyframes moveDown {
+    0% { transform: translateY(-200%); }
+    100% { transform: translateY(0); }
+  }
+  @keyframes moveUp {
+    0% { transform: translateY(200%); }
+    100% { transform: translateY(0); }
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .move-down-wrapper {
+    overflow: hidden;
+  }
+  .move-up-wrapper {
+    overflow: hidden;
+  }
+  
+  
+  /************************** Header (Navigation Bar) **************************/
+  
+  :root {
+    --header-height: 72px;
+  }
+  
+  .top-nav {
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: var(--header-height);
+    position: fixed;
+    overflow-x: auto;
+    overflow-y: hidden;
+    /* z-index: 1; Note: z-index of page-title is 0 */
+    background-color: white;
+    opacity: 0.95;
+    /* backdrop-filter: blur(20px); this slows down webpage like crazzzy */
+
+    /* position: sticky; */
+    z-index: 1000;
+  }
+  
+  /* Container for logo, website name, and menu*/
+  .navigation-bar {
+    width: 80%;
+    height: calc(100% - 1px);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--primary-text-color);
+  }
+  @media only screen and (max-width: 600px) {
+    .navigation-bar {
+      width: 90%;
+    }
+  }
+  
+  .logo {
+    margin-top: 4px;
+    height: 36px;
+  }
+  
+  /* Menu */
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    line-height: 10px; /* Vertically aligns to logo and name */
+    list-style-type: none;
+    margin: -6px 0 -6px -42px;
+  }
+  
+  /* Menu Items */
+  nav li {
+    /* display: inline-block; */
+    margin: 6px 0 6px 42px;
+    font-family: var(--title-font);
+    font-size: 1em;
+    font-weight: 500;
+  }
+  @media only screen and (max-width: 600px) {
+    nav ul {
+      margin: -6px 0 -6px -18px;
+    }
+    nav li {
+      margin: 6px 0 6px 18px;
+      font-size: 0.9em;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    nav ul {
+      margin: -1px 0 -1px -10px;
+    }
+    nav li {
+      margin: 1px 0 1px 10px;
+    }
+    .h1-icon {
+      display: none;
+    }
+  }
+  
+  /* Appearance of menu items doesn't change as a link */
+  nav li a {
+    color: inherit;
+    text-decoration: underline solid 1px;
+    text-underline-offset: 6px;
+    text-decoration-color: transparent;
+    transition: .2s ease;
+  }
+  
+  nav li:hover a {
+    color: #d0943d;
+    text-decoration-color: initial;
+  }
+  
+  /* Inactive nav link is light gray */
+  nav .inactive {
+    color: var(--secondary-text-color);
+    text-decoration: none;
+  }
+  
+  /* Selected nav link is dark gray and bold */
+  nav .selected {
+    color: var(--primary-text-color);
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  a {
+    color: var(--secondary-text-color);
+    text-underline-offset: 3px;
+  }
+  
+  
+  
+  .h1-icon {
+    vertical-align: text-top;
+    height: 20px;
+  }
+  
+  .resume-link {
+    cursor: pointer;
+  }
+  
+  
+  
+  
+  
+  /************************** Body Content **************************/
+  
+  body {
+    overflow: auto;
+    width: 100%;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: var(--body-font);
+    font-size: 1em;
+    color: var(--primary-text-color);
+    user-select: none;
+  }
+  
+  :root {
+    --line-height: 170%;
+  }
+  p {
+    line-height: var(--line-height);
+  }
+  
+  
+  /************************** Deprecating these and replacing with heading tokens **************************/
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--title-font);
+    line-height: 130%;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  
+  h4 {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  /************************** End **************************/
+  
+  .no-wrap {
+    white-space: nowrap;
+  }
+  
+  ::selection { 
+    background-color: var(--highlight-color);
+  }
+  
+  .xxs-space {
+    margin-top: 18px;
+  }
+  .xs-space {
+    margin-top: 36px;
+  }
+  .s-space {
+    margin-top: 48px;
+  }
+  .s-m-space {
+    margin-top: 72px; /*use sparingly*/
+  }
+  .m-space {
+    margin-top: 96px;
+  }
+  .l-space {
+    margin-top: 144px;
+  }
+  .xl-space {
+    margin-top: 192px;
+  }
+  
+  .graphic-word {
+    position: relative;
+    display: inline-block;
+  }
+  
+  hr {
+      border: 0;
+    height: 0;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      border-bottom: 1px solid var(--secondary-text-color);
+  }
+  
+  .tag {
+    display: inline-block;
+    width: fit-content;
+    background-color: var(--accent-color);
+    padding: 6px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    margin-right: 12px;
+    font-size: .8em;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+  }
+  
+  /* Base for a button, need to set colors in other stylesheets */
+  .button {
+    display: block;
+    width: fit-content;
+    border: 1px solid;
+    border-radius: 10000rem; /*orig .5rem*/
+    font-weight: auto;
+    font-size: 1em;
+    text-decoration: none;
+    text-align: center;
+    line-height: 100%;
+    padding: 15px 18px; /* orig .75rem 1rem; */
+    transition: 0.15s ease-in-out;
+    background-color: var(--accent-color);
+    color: inherit;
+  }
+  
+  .active-button {
+      border-color: var(--primary-text-color);
+    color: var(--primary-text-color);
+    background-color: var(--accent-color);
+    cursor: pointer;
+      margin: none;
+  }
+  .active-button:hover {
+      background-color: var(--accent-color-darkened);
+  }
+  .inactive-button {
+      border-color: var(--secondary-text-color);
+    color: var(--secondary-text-color);
+    cursor: default;
+  }
+  
+  .anchor {
+    position: relative;
+    top: -80px;
+  }
+  
+  /************************** Footer **************************/
+  
+  .footer {
+    /* width set in style files for each page */
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    font-family: var(--body-font);
+  }
+  .footer h2 {
+    font-size: var(--heading-5-font-size);
+    margin-top: 0;
+  }
+  
+  .footer .contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 3.25fr;
+    column-gap: 12px;
+    line-height: var(--line-height);
+    align-items: center;
+  }
+  .footer .contact-wrapper > p {
+    margin: 0;
+    line-height: inherit;
+    width: 100%;
+  }
+  .footer .contact-wrapper .links {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: right;
+    justify-content: flex-end;
+    margin: 0 -12px -12px -12px;
+  }
+  .footer .contact-wrapper .links > * {
+    margin: 0 12px 12px 12px;
+    color: var(--primary-text-color)
+  }
+  @media only screen and (max-width: 600px) {
+    .footer .contact-wrapper {
+      grid-template-columns: 1fr;
+    }
+    .footer .contact-wrapper .links {
+      margin-top: 6px;
+      text-align: left;
+      justify-content: flex-start;
+    }
+  }
+  
+  
+  
+  
+  .youtube-video-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .youtube-video-container::after {
+    display: block;
+    content: "";
+    padding-top: 56.25%;
+  }
+  
+  .youtube-video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
