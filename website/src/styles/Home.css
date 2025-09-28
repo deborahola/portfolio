@@ -1,0 +1,47 @@
+@keyframes colorChange {
+  0% {
+    color: #f87171;
+  }
+  25% {
+    color: #fbbf24;
+  }
+  50% {
+    color: #34d399; 
+  }
+  75% {
+    color: #60a5fa;
+  }
+  100% {
+    color: #f87171; 
+  }
+}
+
+.colorChangingExclamation {
+  animation: colorChange 2s infinite;
+}
+
+.down-arrow-wrapper {
+  width: 100%;
+  text-align: center;
+  animation: fadeIn 0.5s ease forwards;
+}
+.down-arrow {
+  display: inline-block;
+  position: relative;
+  font-size: 1.5em;
+  font-weight: 100;
+}
+.bounce {
+  animation: 1675ms bounce 1s infinite;
+}
+@keyframes bounce {
+  0%, 30%, 60%, 100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-.5em);
+  }
+  40% {
+    transform: translateY(-.5em);
+  }
+}
