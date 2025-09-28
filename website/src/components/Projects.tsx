@@ -31,7 +31,7 @@ const projects = [
     description:
       "A web app that lets users view, search, filter, and analyze brewery information with rich, interactive visualizations.",
     techStack: ["React", "JavaScript", "CSS", "Open Brewery DB"],
-    image: "/brewery.gif",
+    image: "/brewery.png",
     link: "https://deborahola.github.io/web102_project5/",
     github: "https://github.com/deborahola/web102_project5",
   },
@@ -70,7 +70,9 @@ const projects = [
     description:
       "An original game made for the GameBoy Advance.",
     techStack: ["C", "GBA"],
-    image: "/coin.gif",
+    image: "/coin.png",
+    link: "https://deborahola.github.io/collect-the-coin/",
+    github: "https://github.com/deborahola/collect-the-coin",
   },
 ];
 export default function Projects() {
