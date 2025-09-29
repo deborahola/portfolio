@@ -75,6 +75,8 @@ const projects = [
     github: "https://github.com/deborahola/collect-the-coin",
   },
 ];
+
+
 export default function Projects() {
   return (
     <div id="projects" className="scroll-mt-24 container mx-auto px-4 md:px-6 max-w-[1000px] py-6">
@@ -87,6 +89,7 @@ export default function Projects() {
     </div>
   )
 }
+
 
 function ProjectCard({ project }: {project: ProjectType}) {
   return (
@@ -134,4 +137,3 @@ function ProjectCard({ project }: {project: ProjectType}) {
     </Card>
   )
 }
-

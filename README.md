@@ -1,4 +1,4 @@
-# 🌐 deborah's website — Personal Portfolio
+# 🌐 debbie's website — Personal Portfolio
 
 ### This is the source code for my personal website. Built with React, Vite, and Tailwind CSS.
 ---
