@@ -17,6 +17,15 @@ type ProjectType = {
 const projects = [
   {
     id: 1,
+    title: "Deadline Digest",
+    description:
+      "An application that extracts academic deadlines from PDF syllabi and offers .ics export to calendars.",
+    techStack: ["React", "TypeScript", "Tailwind", "Python", "FastAPI", "PostgreSQL"],
+    image: "/deadline-digest-screenshot.png",
+    github: "https://github.com/deborahola/deadline-digest",
+  },
+  {
+    id: 2,
     title: "TravelATL",
     description:
       "A React web application that recommends tourists attractions and restaurants in Atlanta, GA based on parameters like rating & price.",
@@ -26,7 +35,7 @@ const projects = [
     github: "https://github.com/deborahola/travel-app",
   },
   {
-    id: 2,
+    id: 3,
     title: "Brewery Dashboard",
     description:
       "A web app that lets users view, search, filter, and analyze brewery information with rich, interactive visualizations.",
@@ -36,36 +45,7 @@ const projects = [
     github: "https://github.com/deborahola/web102_project5",
   },
   {
-    id: 3,
-    title: "Rhythm Report",
-    description:
-      "A year-round music insights app inspired by Spotify Wrapped that allows users to analyze their listening habits and music tastes.",
-    techStack: ["Java", "Firebase (NoSQL)", "Spotify API", "TensorFlow Lite", "Android Studio"],
-    image: "/rhythm.png",
-    github: "https://github.com/deborahola/RhythmReport",
-  },
-  {
     id: 4,
-    title: "News Corner",
-    description:
-      "A full-stack application that provides easy access to the latest news across many different categories.",
-    techStack: ["Python", "Flask", "HTML", "CSS", "Bootstrap"],
-    image: "/newscorner.png",
-    link: "http://debbieola.pythonanywhere.com/",
-    github: "https://github.com/deborahola/News-Corner",
-  },
-  {
-    id: 5,
-    title: "College Scheduler",
-    description:
-      "A mobile app that helps college students stay organized by allowing them to manage their classes, assignments, exams, and more.",
-    techStack: ["Java", "SQLite", "XML", "Android Studio"],
-    image: "/collegescheduler.png",
-    link: "https://appetize.io/app/xmf56i7myll72arbu2d6fqrw7y?device=pixel7&osVersion=13.0",
-    github: "https://github.com/deborahola/College-Scheduler-App",
-  },
-  {
-    id: 6,
     title: "Collect the Coin",
     description:
       "An original game made for the GameBoy Advance.",
@@ -74,6 +54,35 @@ const projects = [
     link: "https://deborahola.github.io/collect-the-coin/",
     github: "https://github.com/deborahola/collect-the-coin",
   },
+  {
+    id: 5,
+    title: "Rhythm Report",
+    description:
+      "A year-round music insights app inspired by Spotify Wrapped that allows users to analyze their listening habits and music tastes.",
+    techStack: ["Java", "Firebase (NoSQL)", "Spotify API", "TensorFlow Lite", "Android Studio"],
+    image: "/rhythm.png",
+    github: "https://github.com/deborahola/RhythmReport",
+  },
+  {
+    id: 6,
+    title: "College Scheduler",
+    description:
+      "A mobile app that helps college students stay organized by allowing them to manage their classes, assignments, exams, and more.",
+    techStack: ["Java", "SQLite", "XML", "Android Studio"],
+    image: "/collegescheduler.png",
+    link: "https://appetize.io/app/xmf56i7myll72arbu2d6fqrw7y?device=pixel7&osVersion=13.0",
+    github: "https://github.com/deborahola/College-Scheduler-App",
+  },
+  // {
+  //   id: 7,
+  //   title: "News Corner",
+  //   description:
+  //     "A full-stack application that provides easy access to the latest news across many different categories.",
+  //   techStack: ["Python", "Flask", "HTML", "CSS", "Bootstrap"],
+  //   image: "/newscorner.png",
+  //   link: "http://debbieola.pythonanywhere.com/",
+  //   github: "https://github.com/deborahola/News-Corner",
+  // },
 ];
 
 

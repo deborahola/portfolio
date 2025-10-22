@@ -7,7 +7,7 @@ export default function About() {
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8 text-[#D1DEDE]">
           <div className="md:col-span-4 space-y-6">
             <p className="text-lg">
-              I'm currently a student pursuing a <strong>Bachelor of Science</strong> in <strong>Computer Science</strong> at the{" "}
+              I'm currently pursuing a Bachelor's degree in <strong>Computer Science</strong> at the{" "}
               <a
                 href="https://www.gatech.edu"
                 target="_blank"
@@ -16,10 +16,11 @@ export default function About() {
               >
                 Georgia Institute of Technology
               </a>
-              . I have a strong interest in software development, with experience building interactive and user-centered applications.
+              . I have a strong interest in <strong>software development</strong>, with experience building interactive and user-centered applications.
             </p>
             <p className="text-lg">
-              Working closely with designers, researchers, product managers, and engineers has shown me the value of collaboration in bringing great concepts to life. 
+              Working closely with designers, researchers, product managers, and engineers has shown me the immense value of collaboration in 
+              bringing great concepts to life, which is why I'm always looking for opportunities to team up with others on new meaningful projects. 
               I thrive in environments that encourage learning, creativity, and innovation.
             </p>
           </div>

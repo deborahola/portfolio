@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="container flex m-auto items-center justify-center mt-5 text-center px-4">
         <p>Let's get in touch! Thanks for stopping by.    •◡•</p>
       </div>
-      <div className="container flex m-auto items-center justify-center mt-10">
+      <div className="container flex m-auto items-center justify-center mt-10 pb-5">
         <p className="text-sm text-muted-foreground">© {currentYear} Deborah Oladokun</p>
       </div>
     </footer>
