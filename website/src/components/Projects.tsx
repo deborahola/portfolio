@@ -42,7 +42,7 @@ const projects = [
     techStack: ["React", "JavaScript", "CSS", "Open Brewery DB"],
     image: "/brewery.png",
     link: "https://deborahola.github.io/web102_project5/",
-    github: "https://github.com/deborahola/web102_project5",
+    github: "https://deborahola.github.io/brewery-dashboard",
   },
   {
     id: 4,
