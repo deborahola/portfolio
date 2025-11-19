@@ -41,8 +41,8 @@ const projects = [
       "A web app that lets users view, search, filter, and analyze brewery information with rich, interactive visualizations.",
     techStack: ["React", "JavaScript", "CSS", "Open Brewery DB"],
     image: "/brewery.png",
-    link: "https://deborahola.github.io/web102_project5/",
-    github: "https://deborahola.github.io/brewery-dashboard",
+    link: "https://deborahola.github.io/brewery-dashboard/",
+    github: "https://github.com/deborahola/brewery-dashboard",
   },
   {
     id: 4,
