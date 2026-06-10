@@ -24,21 +24,37 @@ type Experience = {
 const experiencesData: Experience[] = [
   {
     id: "exp1",
-    title: "AI/ML Research Assistant",
+    title: "Software Engineer Intern",
+    company: "Cash App",
+    location: "Oakland, CA (Remote)",
+    startDate: "May 2026",
+    endDate: "Present",
+    majorDesc: "Core Experiences Team",
+    minorDescs: [
+      "Summer 2026 - Building features for Moneybot, Cash App's new AI-powered financial assistant, across web and mobile platforms.",
+    ],
+    skills: ["Protocol Buffers (Protobuf)", "TypeScript", "React", "Cypress", "Kotlin", "Jetpack Compose"],
+    link: "https://cash.app/",
+    logo: "/cash_app_logo.png",
+  },
+  {
+    id: "exp2",
+    title: "Undergraduate Research Assistant",
     company: "Georgia Tech School of Building Construction",
     location: "Atlanta, GA",
     startDate: "Aug 2025",
     endDate: "Present",
-    majorDesc: "AutoRobotics in Construction Lab - AI and VR for personalized learning in sustainable construction education",
+    majorDesc: "AutoRobotics in Construction Lab - AI & ML for Improving Construction Safety",
     minorDescs: [
-      "Supporting the development of a virtual reality learning environment by contributing to early design, implementation, and literature review to guide integration of AI and machine learning models.",
+      "Trained Python ML models on wearable sensor data to accurately predict construction worker stress and fatigue.",
+      "Built a real-time monitoring dashboard using React + JavaScript + FastAPI, providing visualized detection results to reduce psychosocial risks in construction."
     ],
-    skills: ["C#", "Unity", "Python", "MATLAB", "Machine Learning (ML)", "Artifical Intelligence (AI)", "Virtual Reality (VR)", "Research"],
+    skills: ["Python", "scikit-learn", "NumPy", "Pandas", "FastAPI", "React", "JavaScript", ],
     link: "https://vip.gatech.edu/teams/entry/1332/",
     logo: "/autorob-lab-img.png",
   },
   {
-    id: "exp2",
+    id: "exp3",
     title: "Software Engineer Intern",
     company: "Eyefinity",
     location: "Rancho Cordova, CA (Remote)",
@@ -54,22 +70,6 @@ const experiencesData: Experience[] = [
     skills: ["React", "Angular", "JavaScript", "TypeScript", "HTML", "CSS", "jQuery", "Knockout.js", "C#", ".NET", "Bootstrap", "Material", "REST APIs"],
     link: "https://www.eyefinity.com",
     logo: "/vsp-logo.png", // eyefinity-logo-old.png
-  },
-  {
-    id: "exp3",
-    title: "Helen Fellow + HCI Researcher",
-    company: "National Center for Women & Information Technology",
-    location: "Atlanta, GA",
-    startDate: "May 2025",
-    endDate: "Present",
-    majorDesc: "Research @ Ubiquitous Computing Health and Wellness Lab",
-    minorDescs: [
-      "Designing and evaluating mobile health systems to foster patient engagement, facilitate continuity of care, and mediate communication between patients and healthcare providers.",
-      "Mentoring high school students by guiding them through coding activities, research exposure, and building confidence in pursuing computing careers.",
-    ],
-    skills: ["React Native", "Figma", "Mobile App Development", "UX Design", "Human-Computer Interaction (HCI)", "Research", "Python"],
-    link: "https://sites.google.com/view/riarriaga/lab?authuser=0",
-    logo: "/ncwit-logo-2.png",
   },
   {
     id: "exp4",

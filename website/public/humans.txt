@@ -1,0 +1,21 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Me: debbie
+    Site: window.location.hostname
+    Current location: ATL, GA, USA
+    Email: my first name and my last name (without the final 2 letters) at gmail.com
+    Favorite color: #C8A2C8, followed by #89CFF0 (aka lilac & baby blue)
+
+# THANKS
+
+    idk...
+    Boba (only the chewy toppings tho  >_<  , not the entire drink...)
+
+# SITE
+
+    Last update: 06/10/2026
+    Technologies/Tools:
+      - React + Vite, TypeScript, Tailwind CSS, shadcn/ui, Framer Motion
